@@ -1,0 +1,34 @@
+<!--
+ - Created by smcinturff on 10/13/21.
+ -->
+
+<!-- Lw Collateral Id -->
+<template>
+
+    <lightning-card title="Collateral Id">
+        <lightning-combobox
+                name="SOLUTION-DOMAIN"
+                label="Status"
+                value={defaultSolutionDomain}
+                placeholder="Select Solution Domain"
+                options={solutionDomains}
+                onchange={handleChange} >
+
+        </lightning-combobox>
+
+        <lightning-combobox
+                name="PRODUCT"
+                label="Products"
+                value={defaultProduct}
+                placeholder="Select Product"
+                options={products}
+                onchange={handleChange} >
+
+        </lightning-combobox>
+
+
+        <p>Selected value is: {value}</p>
+
+    </lightning-card>
+
+</template>
