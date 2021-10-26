@@ -36,3 +36,5 @@ $RECYCLE.BIN/
 
 # Local environment variables
 .env
+/force-app/main/default/apexEmailNotifications/apexEmailNotifications.notifications-meta.xml
+/.idea/vcs.xml

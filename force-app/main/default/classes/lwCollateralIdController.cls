@@ -15,4 +15,10 @@ public with sharing class lwCollateralIdController {
         List<UCM_Product__c> myProducts = [SELECT Id, Name, UCM_Solution_Domain__c FROM UCM_Product__c];
         return myProducts;
     }
+
+    @AuraEnabled(Cacheable=true)
+    public static List<UCM_Product_Collateral__c> getCollateral() {
+        List<UCM_Product_Collateral__c> myProducts = [SELECT Id, UCM_Products__c, UCM_Collateral__c, UCM_Collateral__r.Name  FROM UCM_Product_Collateral__c];
+        return myProducts;
+    }
 }

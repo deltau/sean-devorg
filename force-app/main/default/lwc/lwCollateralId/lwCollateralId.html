@@ -26,6 +26,16 @@
 
         </lightning-combobox>
 
+        <lightning-combobox
+                name="COLLATERAL"
+                label="Collateral"
+                value={defaultCollateral}
+                placeholder="Select Collateral"
+                options={collateral}
+                onchange={handleChange}
+                disabled={collateralDisabled}>
+
+        </lightning-combobox>
 
         <p>Selected value is: {value}</p>
 
